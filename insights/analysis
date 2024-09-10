@@ -1,0 +1,25 @@
+Q1) How do sales vary by day of the week and hour of the day?  
+Day of the week: The bar chart "Orders On Weekdays" shows that Friday has the highest number of orders (21,701), followed by Monday (21,643). Saturday has the lowest (20,510).Hour of the day: The line chart "Quantity Based on Hours" indicates a peak in sales around 10 AM, after which sales gradually decrease throughout the day.
+
+Q2) Are there any peak times for sales activity? 
+Yes, peak sales activity occurs around 10 AM, as shown by the "Quantity Based on Hours" line chart.
+
+Q3) How do sales vary across different store locations?
+The bar chart "Footfall and Sales over different stores" indicates the following sales distribution:
+Hell's Kitchen: $2,36,511.17 with 50,735 footfalls.
+Astoria: $2,32,243.91 with 50,599 footfalls.
+Lower Manhattan: $2,30,057.25 with 47,782 footfalls.
+Hell's Kitchen has the highest sales, while Lower Manhattan has the lowest.
+
+Q4) What is the average price/order per person?
+The "Avg Bill per Person" is $4.69 and the "Avg Order per Person" is 1.44 as displayed at the top of the dashboard.
+
+Q5) Which products are the best-selling in terms of quantity and revenue?
+Based on the "Top 5 Products based on sales" bar chart:
+Barista Espresso has the highest revenue at $91,406.20.
+Brewed Black Tea has the lowest among the top 5, with $47,932.00.
+
+Q6) How do sales vary by product category and type?
+The pie chart "Categories % Distribution" shows the sales distribution by category:
+Coffee (39%) has the largest share, followed by Branded products (31%).
+Other categories such as Flavours and Loose Tea make up smaller portions of the sales.
