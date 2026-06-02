@@ -1,25 +1,81 @@
-Q1) How do sales vary by day of the week and hour of the day?  
-Day of the week: The bar chart "Orders On Weekdays" shows that Friday has the highest number of orders (21,701), followed by Monday (21,643). Saturday has the lowest (20,510).Hour of the day: The line chart "Quantity Based on Hours" indicates a peak in sales around 10 AM, after which sales gradually decrease throughout the day.
+Coffee Shop Sales Dashboard — Excel
+---
 
-Q2) Are there any peak times for sales activity? 
-Yes, peak sales activity occurs around 10 AM, as shown by the "Quantity Based on Hours" line chart.
+## Project Overview
+An interactive Excel dashboard analyzing 6 months of coffee shop sales data across 3 New York City locations — Astoria, Hell's Kitchen, and Lower Manhattan. Built with Pivot Tables, Slicers, 
+Power Query, and dynamic charts to surface actionable business insights beyond surface-level totals.
 
-Q3) How do sales vary across different store locations?
-The bar chart "Footfall and Sales over different stores" indicates the following sales distribution:
-Hell's Kitchen: $2,36,511.17 with 50,735 footfalls.
-Astoria: $2,32,243.91 with 50,599 footfalls.
-Lower Manhattan: $2,30,057.25 with 47,782 footfalls.
-Hell's Kitchen has the highest sales, while Lower Manhattan has the lowest.
+---
 
-Q4) What is the average price/order per person?
-The "Avg Bill per Person" is $4.69 and the "Avg Order per Person" is 1.44 as displayed at the top of the dashboard.
+## Key Metrics
 
-Q5) Which products are the best-selling in terms of quantity and revenue?
-Based on the "Top 5 Products based on sales" bar chart:
-Barista Espresso has the highest revenue at $91,406.20.
-Brewed Black Tea has the lowest among the top 5, with $47,932.00.
+| Metric                |         Value            |
+ 
+| Total Revenue         |        $6,98,812.33      |
+| Total Footfall        |        1,49,116 visitors |
+| Avg Bill per Person   |        $4.69             |
+| Avg Orders per Person |        1.44              |
+| Peak Sales Hour       |        10 AM             |
+| Best Day by Orders    |        Friday (21,701)   |
 
-Q6) How do sales vary by product category and type?
-The pie chart "Categories % Distribution" shows the sales distribution by category:
-Coffee (39%) has the largest share, followed by Branded products (31%).
-Other categories such as Flavours and Loose Tea make up smaller portions of the sales.
+---
+
+## Business Questions Answered
+
+1. When should the store be fully staffed?
+Orders peak sharply at 10 AM and decline by nearly 60% after 3 PM. The entire morning window (8 AM–12 PM) drives the majority of daily revenue — optimal staffing and promotions should concentrate here.
+
+2. Which day drives the most business?
+Friday leads with 21,701 orders, but Monday is nearly identical at 21,643 — suggesting consistent weekday demand rather than a single spike day. Saturday underperforms at 
+20,510, pointing to an opportunity for weekend promotions.
+
+3. Which store is actually most efficient?
+
+| Store           | Total Revenue | Footfall | Revenue/Visitor |
+ 
+| Hell's Kitchen  | $2,36,511     | 50,735   | $4.66           |
+| Astoria         | $2,32,243     | 50,599   | $4.59           |
+| Lower Manhattan | $2,30,057     | 47,782   | $4.81 ✓         |
+
+Lower Manhattan converts each visitor into the most revenue — 
+it's not underperforming, it's underleveraged.
+
+4. What should the menu prioritize?
+**Barista Espresso** dominates at $91,406 in revenue — nearly  2× the next best product - (Brewed Black Tea at $47,932). 
+Coffee as a category holds 39% of total sales. Any menu expansion should anchor around espresso-based drinks.
+
+5. What size orders are customers placing?
+Order sizes split almost evenly: Large (30%), Regular (30%), Small (31%) — with 9% undefined. No single size dominates, suggesting the store serves a broad customer mix rather than a specific preference segment.
+
+---
+
+Excel Features Used
+
+- Power Query — data cleaning, extracting hour and day from timestamps
+- Pivot Tables — multi-dimensional aggregation across store, category, time
+- Slicers — interactive filtering by Month and Day
+- Conditional Formatting — visual hierarchy in data tables
+- Dual-axis charts — overlaying quantity and revenue trends
+- Calculated KPI cards — dynamic metric display
+
+---
+
+## Key Takeaway for Business
+
+Three stores. Similar revenue. But only one metric — 
+**revenue per visitor** — reveals which location is truly 
+punching above its weight. Data analysis isn't about 
+reporting numbers. It's about asking the next question.
+
+The Insight That Changes Everything
+Most analyses rank stores by total revenue. When I calculated 
+revenue per visitor, the story flipped completely:
+> Lower Manhattan appears weakest in total sales ($2,30,057) —  
+> but generates the **highest revenue per visitor at $4.81   
+> making it the most operationally efficient location.
+
+---
+
+
+
+
